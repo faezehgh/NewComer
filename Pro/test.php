@@ -3,7 +3,7 @@
 
 <?php
 // Create connection
-$dbh=new PDO("mysql:host=localhost;dbname=auchan","root","");
+$dbh=new PDO("mysql:host=localhost;dbname=test","root","");
 $dbh->exec("set names utf8");
 
 // Obtenir des information de BDD
@@ -57,7 +57,7 @@ if (isset($_GET['id'])){
                     $servername = "localhost";
                     $username   = "root";
                     $password   = "";
-                    $dbname     = "auchan";
+                    $dbname     = "test";
                     $connect = mysqli_connect($servername, $username, $password, $dbname);
                     $query = "SELECT categorie FROM `categorie`";
 
